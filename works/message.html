@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>分布式消息系统 - 项目详情</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="work-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">邱郝艺</a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../index.html#works">作品集</a></li>
+                <li><a href="../index.html#about">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 作品详情内容 -->
+    <div class="work-detail">
+        <div class="detail-container">
+            <h1>分布式消息系统</h1>
+            
+            <div class="project-image">
+                <img src="https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg" alt="消息系统">
+            </div>
+            
+            <div class="project-info">
+                <section class="description">
+                    <h2>项目概述</h2>
+                    <p>本项目是一个基于 RabbitMQ 的分布式消息处理平台，实现了可靠的消息投递、延迟消息处理、死信队列处理等核心功能。系统采用集群部署方式，支持消息的持久化存储，并实现了完整的消息监控和管理功能。</p>
+                </section>
+
+                <section class="architecture">
+                    <h2>系统架构</h2>
+                    <h3>整体架构</h3>
+                    <ul>
+                        <li>分布式消息队列集群</li>
+                        <li>高可用集群架构</li>
+                        <li>消息持久化机制</li>
+                        <li>消息监控管理平台</li>
+                    </ul>
+                    
+                    <h3>技术架构</h3>
+                    <ul>
+                        <li>消息中间件：RabbitMQ Cluster</li>
+                        <li>开发框架：Spring Boot + Spring Cloud Stream</li>
+                        <li>持久化存储：MySQL + MongoDB</li>
+                        <li>缓存系统：Redis Cluster</li>
+                        <li>监控系统：RabbitMQ Management</li>
+                        <li>链路追踪：SkyWalking</li>
+                        <li>日志系统：ELK Stack</li>
+                        <li>告警系统：Prometheus + Grafana</li>
+                        <li>容器化部署：Docker + K8s</li>
+                        <li>负载均衡：HAProxy</li>
+                    </ul>
+                </section>
+
+                <section class="tech-stack">
+                    <h2>核心技术栈</h2>
+                    <ul>
+                        <li>RabbitMQ</li>
+                        <li>Spring Boot</li>
+                        <li>Spring Cloud Stream</li>
+                        <li>Redis</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>ELK Stack</li>
+                        <li>SkyWalking</li>
+                    </ul>
+                </section>
+
+                <section class="features">
+                    <h2>核心功能</h2>
+                    <ul>
+                        <li>消息可靠投递</li>
+                        <li>延迟消息处理</li>
+                        <li>死信队列处理</li>
+                        <li>消息持久化</li>
+                        <li>消息重试机制</li>
+                        <li>消息幂等处理</li>
+                        <li>消息监控告警</li>
+                        <li>消息轨迹追踪</li>
+                        <li>集群管理</li>
+                        <li>负载均衡</li>
+                    </ul>
+                </section>
+
+                <section class="implementation">
+                    <h2>实现细节</h2>
+                    
+                    <h3>1. 消息可靠性保证</h3>
+                    <p>实现了完整的消息可靠性投递机制：</p>
+                    <ul>
+                        <li>生产者确认机制</li>
+                        <li>消费者确认机制</li>
+                        <li>消息持久化存储</li>
+                        <li>消息重试策略</li>
+                        <li>消息补偿机制</li>
+                    </ul>
+
+                    <h3>2. 延迟消息处理</h3>
+                    <p>支持多种延迟消息处理方案：</p>
+                    <ul>
+                        <li>TTL + 死信队列</li>
+                        <li>延迟队列插件</li>
+                        <li>定时任务扫描</li>
+                        <li>消息优先级控制</li>
+                        <li>延迟等级管理</li>
+                    </ul>
+
+                    <h3>3. 消息监控管理</h3>
+                    <p>完整的消息监控体系：</p>
+                    <ul>
+                        <li>队列监控</li>
+                        <li>消息积压监控</li>
+                        <li>消费者状态监控</li>
+                        <li>集群状态监控</li>
+                        <li>告警阈值设置</li>
+                    </ul>
+
+                    <h3>4. 集群管理</h3>
+                    <p>高可用集群管理方案：</p>
+                    <ul>
+                        <li>镜像队列机制</li>
+                        <li>负载均衡策略</li>
+                        <li>故障转移处理</li>
+                        <li>集群扩缩容</li>
+                        <li>配置同步管理</li>
+                    </ul>
+                </section>
+
+                <section class="optimization">
+                    <h2>性能优化</h2>
+                    <p>多方面的性能优化措施：</p>
+                    <ul>
+                        <li>消息批量处理</li>
+                        <li>消费者动态扩缩</li>
+                        <li>内存管理优化</li>
+                        <li>网络传输优化</li>
+                        <li>磁盘IO优化</li>
+                    </ul>
+                </section>
+
+                <section class="security">
+                    <h2>安全保障</h2>
+                    <p>完善的安全防护机制：</p>
+                    <ul>
+                        <li>访问认证授权</li>
+                        <li>传输加密</li>
+                        <li>队列访问控制</li>
+                        <li>操作审计日志</li>
+                        <li>资源隔离</li>
+                    </ul>
+                </section>
+
+                <section class="conclusion">
+                    <h2>项目总结</h2>
+                    <p>通过本项目的实践，构建了一个可靠的分布式消息系统，主要收获包括：</p>
+                    <ul>
+                        <li>消息中间件架构设计经验</li>
+                        <li>分布式系统可靠性保障经验</li>
+                        <li>高可用集群运维经验</li>
+                        <li>性能优化实践经验</li>
+                        <li>消息队列最佳实践</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

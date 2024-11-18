@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>分布式支付系统 - 项目详情</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="work-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">邱郝艺</a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../index.html#works">作品集</a></li>
+                <li><a href="../index.html#about">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 作品详情内容 -->
+    <div class="work-detail">
+        <div class="detail-container">
+            <h1>分布式支付系统</h1>
+            
+            <div class="project-image">
+                <img src="https://cdn.pixabay.com/photo/2017/01/19/13/22/ecommerce-1992280_1280.png" alt="支付系统">
+            </div>
+            
+            <div class="project-info">
+                <section class="description">
+                    <h2>项目概述</h2>
+                    <p>本项目是一个高可用的分布式支付系统，支持多种支付方式，包括支付宝、微信支付、银联支付等。系统采用微服务架构设计，实现了完整的支付生命周期管理，具备高并发处理能力和完善的风控体系。</p>
+                </section>
+
+                <section class="architecture">
+                    <h2>系统架构</h2>
+                    <h3>整体架构</h3>
+                    <ul>
+                        <li>分布式微服务架构</li>
+                        <li>多渠道支付集成方案</li>
+                        <li>高可用集群部署</li>
+                        <li>分布式事务处理</li>
+                    </ul>
+                    
+                    <h3>技术架构</h3>
+                    <ul>
+                        <li>核心框架：Spring Cloud Alibaba</li>
+                        <li>消息队列：RocketMQ</li>
+                        <li>缓存系统：Redis Cluster</li>
+                        <li>数据库：MySQL + ShardingSphere</li>
+                        <li>分布式事务：Seata</li>
+                        <li>服务注册：Nacos</li>
+                        <li>配置中心：Apollo</li>
+                        <li>网关服务：Spring Cloud Gateway</li>
+                        <li>监控系统：Prometheus + Grafana</li>
+                        <li>链路追踪：SkyWalking</li>
+                    </ul>
+                </section>
+
+                <section class="tech-stack">
+                    <h2>核心技术栈</h2>
+                    <ul>
+                        <li>Spring Cloud Alibaba</li>
+                        <li>RocketMQ</li>
+                        <li>Redis</li>
+                        <li>MySQL</li>
+                        <li>ShardingSphere</li>
+                        <li>Seata</li>
+                        <li>Apollo</li>
+                        <li>SkyWalking</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </section>
+
+                <section class="features">
+                    <h2>核心功能</h2>
+                    <ul>
+                        <li>多渠道支付集成</li>
+                        <li>订单支付处理</li>
+                        <li>退款处理</li>
+                        <li>支付结果通知</li>
+                        <li>账户管理</li>
+                        <li>支付流水记录</li>
+                        <li>对账系统</li>
+                        <li>风控系统</li>
+                        <li>商户管理</li>
+                        <li>统计报表</li>
+                    </ul>
+                </section>
+
+                <section class="implementation">
+                    <h2>实现细节</h2>
+                    
+                    <h3>1. 支付处理流程</h3>
+                    <p>实现了完整的支付处理流程：</p>
+                    <ul>
+                        <li>统一支付接口封装</li>
+                        <li>支付订单状态管理</li>
+                        <li>支付结果异步通知</li>
+                        <li>订单超时处理</li>
+                        <li>重复支付防护</li>
+                    </ul>
+
+                    <h3>2. 退款系统</h3>
+                    <p>完整的退款处理机制：</p>
+                    <ul>
+                        <li>退款申请处理</li>
+                        <li>退款状态跟踪</li>
+                        <li>退款结果通知</li>
+                        <li>部分退款支持</li>
+                        <li>退款限制控制</li>
+                    </ul>
+
+                    <h3>3. 对账系统</h3>
+                    <p>自动化对账处理：</p>
+                    <ul>
+                        <li>多渠道对账</li>
+                        <li>差异数据处理</li>
+                        <li>对账报表生��</li>
+                        <li>历史数据归档</li>
+                        <li>问题数据修复</li>
+                    </ul>
+
+                    <h3>4. 风控系统</h3>
+                    <p>多维度风控体系：</p>
+                    <ul>
+                        <li>实时风控规则</li>
+                        <li>交易限额控制</li>
+                        <li>异常行为检测</li>
+                        <li>黑名单管理</li>
+                        <li>风险预警</li>
+                    </ul>
+                </section>
+
+                <section class="optimization">
+                    <h2>性能优化</h2>
+                    <p>系统性能优化措施：</p>
+                    <ul>
+                        <li>数据库分库分表</li>
+                        <li>多级缓存架构</li>
+                        <li>异步处理机制</li>
+                        <li>并发控制优化</li>
+                        <li>服务降级策略</li>
+                    </ul>
+                </section>
+
+                <section class="security">
+                    <h2>安全保障</h2>
+                    <p>全方位安全防护：</p>
+                    <ul>
+                        <li>数据加密传输</li>
+                        <li>签名验证机制</li>
+                        <li>防重放攻击</li>
+                        <li>敏感信息加密</li>
+                        <li>操作审计日志</li>
+                    </ul>
+                </section>
+
+                <section class="conclusion">
+                    <h2>项目总结</h2>
+                    <p>通过本项目的实践，构建了一个可靠的支付系统，主要收获包括：</p>
+                    <ul>
+                        <li>支付系统架构设计经验</li>
+                        <li>高并发系统处理能力</li>
+                        <li>金融级安全防护经验</li>
+                        <li>分布式事务处理经验</li>
+                        <li>支付行业领域知识</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

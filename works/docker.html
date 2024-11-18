@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Docker 容器化部署 - 项目详情</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="work-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">邱郝艺</a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../index.html#works">作品集</a></li>
+                <li><a href="../index.html#about">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 作品详情内容 -->
+    <div class="work-detail">
+        <div class="detail-container">
+            <h1>Docker 容器化部署实践</h1>
+            
+            <div class="project-image">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/code-1839877_1280.jpg" alt="Docker容器化">
+            </div>
+            
+            <div class="project-info">
+                <section class="description">
+                    <h2>项目概述</h2>
+                    <p>本项目是一个完整的容器化部署解决方案，基于 Docker 和 Kubernetes 技术栈，实现了从开发到生产环境的全流程容器化管理。项目包括容器编排、服务发现、负载均衡、持续集成/持续部署(CI/CD)等核心功能，为微服务架构提供了强大的容器化支持。</p>
+                </section>
+
+                <section class="architecture">
+                    <h2>系统架构</h2>
+                    <h3>整体架构</h3>
+                    <ul>
+                        <li>基于 Docker + Kubernetes 的容器云平台</li>
+                        <li>多环境（开发、测试、生产）容器化管理</li>
+                        <li>自动化的 CI/CD 流水线</li>
+                        <li>容器化微服务治理体系</li>
+                    </ul>
+                    
+                    <h3>技术架构</h3>
+                    <ul>
+                        <li>容器运行时：Docker Engine</li>
+                        <li>容器编排：Kubernetes</li>
+                        <li>服务网格：Istio</li>
+                        <li>镜像仓库：Harbor</li>
+                        <li>配置中心：Nacos</li>
+                        <li>服务发现：Consul</li>
+                        <li>负载均衡：Nginx Ingress</li>
+                        <li>监控告警：Prometheus + Grafana</li>
+                        <li>日志管理：EFK Stack</li>
+                        <li>CI/CD：Jenkins + GitLab</li>
+                    </ul>
+                </section>
+
+                <section class="tech-stack">
+                    <h2>核心技术栈</h2>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Istio</li>
+                        <li>Harbor</li>
+                        <li>Jenkins</li>
+                        <li>GitLab</li>
+                        <li>Prometheus</li>
+                        <li>Grafana</li>
+                        <li>ELK Stack</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </section>
+
+                <section class="features">
+                    <h2>核心功能</h2>
+                    <ul>
+                        <li>容器化部署</li>
+                        <li>服务编排管理</li>
+                        <li>自动化发布</li>
+                        <li>服务发现注册</li>
+                        <li>负载均衡</li>
+                        <li>故障转移</li>
+                        <li>自动扩缩容</li>
+                        <li>监控告警</li>
+                        <li>日志收集</li>
+                        <li>安全管控</li>
+                    </ul>
+                </section>
+
+                <section class="implementation">
+                    <h2>实现细节</h2>
+                    
+                    <h3>1. 容器化标准化</h3>
+                    <p>制定了完整的容器化规范和流程：</p>
+                    <ul>
+                        <li>基础镜像标准化管理</li>
+                        <li>Dockerfile 最佳实践规范</li>
+                        <li>镜像分层优化策略</li>
+                        <li>容器安全扫描机制</li>
+                    </ul>
+
+                    <h3>2. Kubernetes集群管理</h3>
+                    <p>实现了完整的 K8s 集群管理方案：</p>
+                    <ul>
+                        <li>多集群管理与调度</li>
+                        <li>Pod 资源配额管理</li>
+                        <li>命名空间隔离</li>
+                        <li>服务质量保障</li>
+                    </ul>
+
+                    <h3>3. 服务网格治理</h3>
+                    <p>基于 Istio 实现服务网格：</p>
+                    <ul>
+                        <li>流量管理与控制</li>
+                        <li>安全策略管理</li>
+                        <li>可观测性增强</li>
+                        <li>策略执行</li>
+                    </ul>
+
+                    <h3>4. CI/CD 流水线</h3>
+                    <p>构建了自动化的持续集成和部署流程：</p>
+                    <ul>
+                        <li>代码提交自动触发构建</li>
+                        <li>自动化测试与质量检查</li>
+                        <li>多环境自动部署</li>
+                        <li>灰度发布支持</li>
+                    </ul>
+                </section>
+
+                <section class="optimization">
+                    <h2>性能优化</h2>
+                    <p>实施了多方面的优化措施：</p>
+                    <ul>
+                        <li>镜像层优化，减少镜像大小</li>
+                        <li>容器资源限制与调优</li>
+                        <li>网络性能优化</li>
+                        <li>存储性能优化</li>
+                        <li>集群调度优化</li>
+                    </ul>
+                </section>
+
+                <section class="security">
+                    <h2>安全保障</h2>
+                    <p>建立了完整的安全防护体系：</p>
+                    <ul>
+                        <li>容器运行时安全</li>
+                        <li>镜像安全扫描</li>
+                        <li>网络安全策略</li>
+                        <li>密钥管理</li>
+                        <li>访问控制</li>
+                    </ul>
+                </section>
+
+                <section class="monitoring">
+                    <h2>监控运维</h2>
+                    <p>实现了全方位的监控体系：</p>
+                    <ul>
+                        <li>容器资源监控</li>
+                        <li>应用性能监控</li>
+                        <li>集群状态监控</li>
+                        <li>日志实时采集</li>
+                        <li>告警自动推送</li>
+                    </ul>
+                </section>
+
+                <section class="conclusion">
+                    <h2>项目总结</h2>
+                    <p>通过本项目的实践，成功构建了一个完整的容器云平台，主要收获包括：</p>
+                    <ul>
+                        <li>容器化最佳实践经验</li>
+                        <li>Kubernetes 集群管理能力</li>
+                        <li>自动化运维实践经验</li>
+                        <li>微服务治理经验</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

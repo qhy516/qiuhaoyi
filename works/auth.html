@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>统一认证授权系统 - 项目详情</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="work-detail.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">邱郝艺</a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../index.html#works">作品集</a></li>
+                <li><a href="../index.html#about">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 作品详情内容 -->
+    <div class="work-detail">
+        <div class="detail-container">
+            <h1>统一认证授权系统</h1>
+            
+            <div class="project-image">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="认证授权">
+            </div>
+            
+            <div class="project-info">
+                <section class="description">
+                    <h2>项目概述</h2>
+                    <p>本项目是一个基于 OAuth2 和 JWT 的统一身份认证与授权平台，为企业级应用提供集中式的用户认证和权限管理服务。系统支持多种认证方式，实现了细粒度的权限控制，并提供完整的用户管理和审计功能。</p>
+                </section>
+
+                <section class="architecture">
+                    <h2>系统架构</h2>
+                    <h3>整体架构</h3>
+                    <ul>
+                        <li>基于 OAuth2 授权框架</li>
+                        <li>JWT Token 认证机制</li>
+                        <li>分布式会话管理</li>
+                        <li>多租户架构设计</li>
+                    </ul>
+                    
+                    <h3>技术架构</h3>
+                    <ul>
+                        <li>认证框架：Spring Security OAuth2</li>
+                        <li>Token 管理：JWT + Redis</li>
+                        <li>权限框架：Spring Security</li>
+                        <li>数据存储：MySQL</li>
+                        <li>缓存系统：Redis Cluster</li>
+                        <li>消息队列：RabbitMQ</li>
+                        <li>服务发现：Nacos</li>
+                        <li>配置中心：Apollo</li>
+                        <li>网关服务：Spring Cloud Gateway</li>
+                        <li>监控系统：Prometheus + Grafana</li>
+                    </ul>
+                </section>
+
+                <section class="tech-stack">
+                    <h2>核心技术栈</h2>
+                    <ul>
+                        <li>Spring Security</li>
+                        <li>OAuth2</li>
+                        <li>JWT</li>
+                        <li>Spring Boot</li>
+                        <li>Spring Cloud</li>
+                        <li>Redis</li>
+                        <li>MySQL</li>
+                        <li>RabbitMQ</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </section>
+
+                <section class="features">
+                    <h2>核心功能</h2>
+                    <ul>
+                        <li>统一身份认证</li>
+                        <li>OAuth2 授权</li>
+                        <li>JWT Token 管理</li>
+                        <li>多租户支持</li>
+                        <li>RBAC 权限控制</li>
+                        <li>单点登录(SSO)</li>
+                        <li>第三方登录集成</li>
+                        <li>安全审计日志</li>
+                        <li>用户管理</li>
+                        <li>权限管理</li>
+                    </ul>
+                </section>
+
+                <section class="implementation">
+                    <h2>实现细节</h2>
+                    
+                    <h3>1. 认证系统</h3>
+                    <p>实现了多种认证方式：</p>
+                    <ul>
+                        <li>用户名密码认证</li>
+                        <li>手机验证码认证</li>
+                        <li>第三方OAuth认证</li>
+                        <li>扫码登录</li>
+                        <li>生物识别认证</li>
+                    </ul>
+
+                    <h3>2. 授权系统</h3>
+                    <p>基于 OAuth2 实现授权管理：</p>
+                    <ul>
+                        <li>授权码模式</li>
+                        <li>密码模式</li>
+                        <li>客户端模式</li>
+                        <li>简化模式</li>
+                        <li>刷新Token机制</li>
+                    </ul>
+
+                    <h3>3. 权限控制</h3>
+                    <p>实现了细粒度的权限控制：</p>
+                    <ul>
+                        <li>RBAC 权限模型</li>
+                        <li>动态权限配置</li>
+                        <li>数据权限控制</li>
+                        <li>接口权限控制</li>
+                        <li>菜单权限控制</li>
+                    </ul>
+
+                    <h3>4. 会话管理</h3>
+                    <p>分布式会话管理方案：</p>
+                    <ul>
+                        <li>Token 存储管理</li>
+                        <li>会话状态同步</li>
+                        <li>单点登录实现</li>
+                        <li>会话并发控制</li>
+                        <li>会话超时处理</li>
+                    </ul>
+                </section>
+
+                <section class="security">
+                    <h2>安全特性</h2>
+                    <p>全方位的安全防护：</p>
+                    <ul>
+                        <li>密码加密存储</li>
+                        <li>防暴力破解</li>
+                        <li>XSS防护</li>
+                        <li>CSRF防护</li>
+                        <li>SQL注入防护</li>
+                    </ul>
+                </section>
+
+                <section class="monitoring">
+                    <h2>监控审计</h2>
+                    <p>完整的监控审计体系：</p>
+                    <ul>
+                        <li>登录日志记录</li>
+                        <li>操作审计日志</li>
+                        <li>异常行为监控</li>
+                        <li>实时告警通知</li>
+                        <li>安全报表统计</li>
+                    </ul>
+                </section>
+
+                <section class="conclusion">
+                    <h2>项目总结</h2>
+                    <p>通过本项目的实践，构建了一个企业级的认证授权平台，主要收获包括：</p>
+                    <ul>
+                        <li>认证授权架构设计经验</li>
+                        <li>安全框架整合经验</li>
+                        <li>分布式系统开发经验</li>
+                        <li>企业级应用开发经验</li>
+                        <li>系统安全防护经验</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">邱郝艺</a>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#works">作品集</a></li>
+                <li><a href="#about">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 轮播图部分 -->
+    <section id="slider">
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg" alt="编程开发" />
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="代码编写" />
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png" alt="程序设计" />
+                </div>
+            </div>
+            <button class="slider-btn" id="prevBtn">←</button>
+            <button class="slider-btn" id="nextBtn">→</button>
+        </div>
+    </section>
+
+    <!-- 作品展示区 -->
+    <section id="works">
+        <h2>我的作品</h2>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchWorks" placeholder="搜索作品...">
+                <button id="searchBtn">搜索</button>
+            </div>
+        </div>
+        <div class="works-grid">
+            <a href="works/spring-cloud.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Spring Cloud">
+                <h3>Spring Cloud 微服务架构</h3>
+                <p>包含服务注册、配置中心、服务网关等组件的完整实现</p>
+            </a>
+            <a href="works/docker.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/code-1839877_1280.jpg" alt="Docker容器化">
+                <h3>Docker容器化部署</h3>
+                <p>使用Docker实现微服务容器化管理与快速部署</p>
+            </a>
+            <a href="works/monitor.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="微服务监控">
+                <h3>微服务监控与追踪</h3>
+                <p>整合 Spring Boot Admin、Zipkin 实现服务监控与链路追踪</p>
+            </a>
+            <a href="works/mall.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2019/12/14/08/36/shopping-4694470_1280.jpg" alt="电商平台">
+                <h3>分布式电商平台</h3>
+                <p>基于Spring Cloud Alibaba的完整电商解决方案</p>
+            </a>
+            <a href="works/payment.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2017/01/19/13/22/ecommerce-1992280_1280.png" alt="支付系统">
+                <h3>分布式支付系统</h3>
+                <p>支持多渠道支付的高并发支付处理系统</p>
+            </a>
+            <a href="works/message.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg" alt="消息系统">
+                <h3>分布式消息系统</h3>
+                <p>基于RabbitMQ的可靠消息处理平台</p>
+            </a>
+            <a href="works/auth.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="认证授权">
+                <h3>统一认证授权系统</h3>
+                <p>基于OAuth2和JWT的统一身份认证和授权平台</p>
+            </a>
+            <a href="works/search.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg" alt="搜索系统">
+                <h3>分布式搜索系统</h3>
+                <p>基于Elasticsearch的高性能搜索引擎</p>
+            </a>
+            <a href="works/bigdata.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2017/07/10/23/43/question-mark-2492009_1280.jpg" alt="大数据">
+                <h3>大数据分析平台</h3>
+                <p>基于Hadoop生态的数据处理和分析系统</p>
+            </a>
+            <a href="works/ai.html" class="work-item">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="AI平台">
+                <h3>AI服务平台</h3>
+                <p>集成多种机器学习模型的智能服务平台</p>
+            </a>
+        </div>
+
+        <!-- 分页控制 -->
+        <div class="pagination">
+            <button class="page-btn active" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn next-btn">下一页 →</button>
+        </div>
+    </section>
+
+    <!-- 在body标签结束前添加 -->
+    <script src="script.js"></script>
+
+    <!-- 在作品展示区后面添加弹窗结构 -->
+    <div class="modal" id="workModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <h2 class="modal-title"></h2>
+                <img class="modal-img" src="" alt="">
+                <div class="modal-description">
+                    <h3>项目描述</h3>
+                    <p class="project-description"></p>
+                    <h3>技术栈</h3>
+                    <ul class="tech-stack"></ul>
+                    <h3>主要功能</h3>
+                    <ul class="features"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 在作品展示区后面添加"关于我"部分 -->
+    <section id="about">
+        <div class="about-container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="https://img.icons8.com/bubbles/512/user-male-circle.png" alt="邱郝艺">
+                </div>
+                <div class="profile-info">
+                    <h3>邱郝艺</h3>
+                    <p class="title">全栈开发工程师</p>
+                    <div class="skills">
+                        <h4>技术栈</h4>
+                        <ul>
+                            <li>Java 后端开发</li>
+                            <li>Spring Cloud 微服务</li>
+                            <li>Docker & Kubernetes</li>
+                            <li>前端开发 (Vue.js)</li>
+                            <li>数据库设计</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h4>联系方式</h4>
+                        <p><i class="icon">📧</i> Email: 876434739@qq.com</p>
+                        <p><i class="icon">📱</i> 电话: 18716573962</p>
+                        <p><i class="icon">💼</i> GitHub: <a href="https://github.com/qhy516" target="_blank">https://github.com/qhy516</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 添加页脚 -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 邱郝艺的个人网站. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#works">作品集</a>
+                    <a href="#about">关于我</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 添加返回顶部按钮 -->
+    <button id="backToTop" title="返回顶部">↑</button>
+</body>
+</html> 
