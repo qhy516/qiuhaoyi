@@ -314,4 +314,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // 处理所有带有 scroll-top 类的链接
+    document.querySelectorAll('.scroll-top').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
 }); 

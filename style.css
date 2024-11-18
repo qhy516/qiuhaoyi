@@ -557,4 +557,86 @@ footer {
 
 .clear-search-btn:hover {
     background: #444;
+}
+
+/* 添加时间线样式 */
+.timeline {
+    margin: 20px 0;
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: -26px;
+    top: 5px;
+}
+
+.time {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.company, .school {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 3px;
+}
+
+.position, .major {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* 证书样式 */
+.certificates ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.certificates li {
+    background: #f8f8f8;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #333;
+}
+
+/* 调整技能标签样式 */
+.skills ul {
+    margin: 15px 0;
+}
+
+.skills li {
+    margin: 5px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9em;
+    transition: all 0.3s;
+}
+
+.skills li:hover {
+    background: #333;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* 删除分类筛选相关样式 */
+.category-filter,
+.filter-btn {
+    display: none;
 } 
